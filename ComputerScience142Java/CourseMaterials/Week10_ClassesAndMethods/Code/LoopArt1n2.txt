@@ -1,0 +1,104 @@
+// Version 1: everything in main
+import java.util.Scanner;
+public class LoopArt1 {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String input;
+        do {
+            System.out.println("Choose a shape to see: ");
+            System.out.println("1 Square");
+            System.out.println("2 Hollow Rectangle");
+            System.out.println("3 Right Triangle");
+            System.out.println("Or type something else to quit");
+            System.out.print("Your choice: ");
+            input = kb.nextLine();
+            if (input.equals("1")){ // draw square
+                for (int x=0; x<8; x++) {
+                    for (int y=0; y<8; y++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
+            }
+            else if (input.equals("2")) { // draw hollow rectangle
+                for (int x=0; x<12; x++) {
+                    for (int y=0; y<8; y++) {
+                        if(x==0 || x==11    // top or bottom of rectangle
+                        || y==0 || y==7) {  // left or right side
+                            System.out.print("* ");
+                        }
+                        else { // in the middle somewhere
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();
+                }
+            }
+            else if (input.equals("3")) { // draw right triangle
+                for (int x=0; x<8; x++) {
+                    for (int y=0; y<=x; y++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
+            }
+            else {  // user wants to quit
+                System.out.println("OK then, goodbye");
+            }
+        } while (input.equals("1") || input.equals("2") || input.equals("3"));
+                   
+    }
+}
+    
+// Version 2: add methods
+import java.util.Scanner;
+public class LoopArt2 {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String input;
+        do {
+            System.out.println("Choose a shape to see: ");
+            System.out.println("1 Square");
+            System.out.println("2 Hollow Rectangle");
+            System.out.println("3 Right Triangle");
+            System.out.println("Or type something else to quit");
+            System.out.print("Your choice: ");
+            input = kb.nextLine();
+            if (input.equals("1")) // draw square
+                drawSquare();
+            else if (input.equals("2")) // draw hollow rectangle
+                drawHollowRectangle();
+            else if (input.equals("3")) // draw right triangle
+                drawRightTriangle();
+            else  // user wants to quit
+                System.out.println("OK then, goodbye");
+        } while (input.equals("1") || input.equals("2") || input.equals("3"));
+    }
+    public static void drawSquare() {
+        for (int x=0; x<8; x++) {
+            for (int y=0; y<8; y++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+    public static void drawHollowRectangle() {
+        for (int x=0; x<12; x++) {
+            for (int y=0; y<8; y++) {
+                if(x==0 || x==11    // top or bottom of rectangle
+                || y==0 || y==7)  // left or right side
+                    System.out.print("* ");
+                else // in the middle somewhere
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void drawRightTriangle() {
+        for (int x=0; x<8; x++) {
+            for (int y=0; y<=x; y++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}

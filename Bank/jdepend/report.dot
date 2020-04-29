@@ -1,0 +1,79 @@
+
+digraph g {
+        graph [
+	    rankdir = "LR"
+	];
+	node [
+	    fontsize = "12"
+	    fontname = "Courier"
+	    shape = "ellipse"
+	];
+	edge[];
+	"Bank" [
+        label="Bank | Total Classes: 3"
+	shape="record"
+	color=".99 0.14 .9"
+	style=filled
+    ];
+    "Bank" -> "accounts"
+    "Bank" -> "java.io"
+    "Bank" -> "java.lang"
+    "Bank" -> "java.text"
+    "Bank" -> "javax.swing"
+    "Bank" -> "org.junit"
+    "TestingSuite" [
+        label="TestingSuite | Total Classes: 1"
+	shape="record"
+	color=".99 0 .9"
+	style=filled
+    ];
+    "TestingSuite" -> "java.lang"
+    "TestingSuite" -> "org.junit.runners"
+    "accounts" [
+        label="accounts | Total Classes: 6"
+	shape="record"
+	color=".99 0.03 .9"
+	style=filled
+    ];
+    "accounts" -> "Bank"
+    "accounts" -> "java.io"
+    "accounts" -> "java.lang"
+    "accounts" -> "org.junit"
+    "java.io" [
+        label="java.io | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.lang" [
+        label="java.lang | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.text" [
+        label="java.text | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.swing" [
+        label="javax.swing | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "org.junit" [
+        label="org.junit | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "org.junit.runners" [
+        label="org.junit.runners | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    
+}

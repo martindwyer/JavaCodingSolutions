@@ -1,0 +1,52 @@
+import java.util.*;
+import java.io.*;
+public class NestLoopAvgFileExample
+{
+    public static void main (String [] args)
+    {
+        boolean allOK = false;
+        Scanner infile = null;
+        FileInputStream file = null;
+        String fName;
+        infile = new Scanner(System.in);
+        while (!allOK)
+        {
+            System.out.print("Enter name of input file: ");
+            fName = infile.nextLine();
+            try
+            {
+                file = new FileInputStream(fName);
+                allOK = true;
+            }
+            catch (FileNotFoundException e)
+            {
+                System.out.println("Couldn't open input file - try again");
+            }
+        }
+        infile = new Scanner(file);
+        int total = 0,  // sum total for all IDs
+            thisID,     // current ID number
+            howMany,    // number of readings for current ID
+            reading,    // current reading
+            idTotal,    // total for current ID
+            idCount;    // counter for processing current ID's readings
+        double average;
+        System.out.printf("%s%13s\n", "ID Number", "Average");
+        do {
+            thisID = infile.nextInt();
+            howMany = infile.nextInt();
+            idTotal = 0;
+            total++;
+            for (idCount=0; idCount < howMany; idCount++)
+            {
+                reading = infile.nextInt();
+                idTotal += reading;
+            }
+            average = (double)idTotal/howMany;
+            System.out.print(thisID);
+            System.out.printf("%17.2f\n", average);
+        } while (infile.hasNext());
+        System.out.println("Total of " + total + " records were processed.");
+        infile.close();
+    }
+}

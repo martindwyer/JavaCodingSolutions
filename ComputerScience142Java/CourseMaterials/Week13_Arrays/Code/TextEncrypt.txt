@@ -1,0 +1,102 @@
+import java.util.*;
+import java.io.*;
+public class TextEncrypt
+{
+    String input;       // original input string, read from file
+    char [] text;       // array to hold input as collection of characters
+    char [] newText;    // encrypted text
+    char [][] subs;     // 2D array that maps alpha characters to substitutes
+    Random rg; 
+    public TextEncrypt () throws Exception
+    {
+        subs = new char [2][26];
+        rg = new Random();
+        input = new String("");
+        getInput();
+        xferToArray();
+        setupSubs();
+        encrypt();
+        writeOutput();
+    } 
+    public void getInput ()
+    {
+        FileInputStream infile=null;
+        try {
+            infile = new FileInputStream("TextEncrypt.java");
+            } catch (FileNotFoundException e)
+            {
+                System.err.println("EEEEEEEEEEEEEEEK!");
+                System.exit(1);
+            }
+          Scanner file = new Scanner(infile);
+          while (file.hasNext())
+            input = input + file.nextLine();
+          file.close();
+    }
+    public void xferToArray ()
+    {
+        int len = input.length();
+        text = new char[len];
+        newText = new char[len];
+        for (int x=0; x<len; x++)
+            text[x] = input.charAt(x);
+   }  
+   public void setupSubs ()
+   {
+       char tmp;
+       for (char ch = 'A'; ch <='Z'; ch++)
+       {
+            subs[0][ch-'A'] = ch;
+            subs[1][ch-'A'] = ch;
+       }
+							
+       for (int x = 0; x < 26; x++)
+       {
+           int i1 = rg.nextInt(26);
+           int i2 = rg.nextInt(26);
+           while (i1 == i2)
+            i1 = rg.nextInt(26);
+           tmp = subs[1][i1];
+           subs[1][i1] = subs[1][i2];
+           subs[1][i2] = tmp;
+        }
+        for (int x=0; x<26; x++)
+            System.out.println("" + x + "\t" + subs[1][x] + "\t" + subs[0][x]);
+    }    
+    public void encrypt ()
+    {
+        for (int x=0; x<text.length; x++)
+        {
+            char c = text[x];
+            System.out.print(c);
+            if (Character.isLetter(c))
+            {
+                c = Character.toUpperCase(c);
+                int index = (int)(c-'A');
+                c = subs[1][index];
+            }
+            newText[x] = c;
+        }
+    } 
+    public void writeOutput()
+    {
+        FileOutputStream outfile = null;
+          try
+          {
+                outfile = new FileOutputStream("scramble.txt");
+         }
+         catch (FileNotFoundException e)
+         {
+            System.err.println("Could not open output file.  You have bad karma.");
+            System.exit(1);
+        }
+          PrintWriter myFile = new PrintWriter(outfile);
+        for (int x=0; x<newText.length; x++)
+            myFile.print(newText[x]);
+        myFile.close();
+    }   
+    public static void main (String [] args) throws Exception
+    {
+         TextEncrypt goBaby = new TextEncrypt();
+    }
+}

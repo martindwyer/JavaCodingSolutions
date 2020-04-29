@@ -1,0 +1,26 @@
+/**
+ * CalculateHourlyPay:
+ * Given input for yearly salary, calculates & displays pay per hour
+ * @version 15 August 2018
+ * @author Cate Sheller
+ */
+import java.util.Scanner;
+
+public class CalculateHourlyPay {
+    public static final int WEEKS = 52; // weeks per year
+    public static final int HOURS = 40; // hours per work week
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        double salary;      // amount paid per year: input
+        double hourlyPay;   // amount paid per hour: calculated
+        // Get salary from user:
+        System.out.print("What is your yearly salary? ");
+        salary = kb.nextDouble();
+        // Calculate hourly pay:
+        hourlyPay = salary / (WEEKS * HOURS);
+        // Output results:
+        System.out.println("Based on your salary of $" +
+            salary + ", you make $" + hourlyPay +
+            " per hour (before deductions).");
+    }
+}

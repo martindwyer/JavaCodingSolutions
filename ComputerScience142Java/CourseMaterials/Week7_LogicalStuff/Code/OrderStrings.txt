@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class OrderStrings {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String first, second;
+        System.out.println("Welcome to my amazing alphabetizing program!");
+        System.out.print("Enter first word: ");
+        first = kb.nextLine();
+        System.out.print("Enter second word: ");
+        second = kb.nextLine();
+        if (first.compareTo(second) < 0) {
+            System.out.println(first);
+            System.out.println(second);
+        }
+        else if (first.compareTo(second) > 0) {
+            System.out.println(second);
+            System.out.println(first);
+        }
+        else {
+            System.out.println(first);
+            System.out.println("You can't make me say it twice!");
+        }
+    }
+}

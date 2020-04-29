@@ -1,0 +1,16 @@
+import java.util.Random;
+public class Goldilocks {
+    public static void main (String [] args)  {
+        Random rg = new Random();
+        int x = rg.nextInt(3);
+        if (x == 0) {
+            System.out.println("This porridge is too hot!");
+        }
+        if (x == 1) {
+            System.out.println("This porridge is too cold!");
+        }
+        if (x == 2) {
+            System.out.println("This porridge is just right!");
+        }
+    }
+}

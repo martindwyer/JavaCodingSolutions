@@ -1,0 +1,69 @@
+import java.util.*;
+
+public class DeckofCards {
+    private PlayingCard [] deck;
+    private int numInDeck;
+		
+    public DeckofCards () {
+        numInDeck = 52;
+        deck = new PlayingCard[numInDeck];
+        populateDeck();
+    }
+		
+    public void populateDeck() {
+        char suit = 'H';
+        for (int x=0; x<deck.length; x++) {
+            deck[x] = new PlayingCard((x%13)+1, suit);
+            if(x==12) suit = 'S';
+            if(x==25) suit = 'D';
+            if(x==38) suit = 'C';
+        }
+        numInDeck=52;
+    }
+		
+    public static void shuffle(PlayingCard [] cards) {
+        int first, second;
+        PlayingCard tmp;
+        for (int x=0; x<cards.length; x++) {
+            first = PlayingCard.rg.nextInt(cards.length);
+            second = PlayingCard.rg.nextInt(cards.length);
+            tmp = cards[first];
+            cards[first] = cards[second];
+            cards[second] = tmp;
+        }
+    }
+    
+    public void shuffle() {
+        shuffle(deck);
+    }
+    
+    public int getNumInDeck() { return numInDeck; }
+    
+    public PlayingCard deal() {
+        PlayingCard card = null;
+        if (numInDeck > 0) {
+            card = deck[numInDeck-1];
+            numInDeck--;
+        }
+        else throw new RuntimeException("Deck is empty");
+        return card;
+    }
+
+		   
+    public static void main(String [] args) {
+        DeckofCards theDeck = new DeckofCards();
+        System.out.println("Here's the deck:");
+        while(theDeck.getNumInDeck() > 0) {
+            System.out.println(theDeck.deal());
+        }
+        theDeck.populateDeck();
+        System.out.println("Here it is shuffled:");
+        theDeck.shuffle();
+        while(theDeck.getNumInDeck() > 0) {
+            System.out.println(theDeck.deal());
+        }
+    }
+}
+        
+        
+        

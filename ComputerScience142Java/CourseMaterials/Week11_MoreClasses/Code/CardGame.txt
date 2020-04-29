@@ -1,0 +1,28 @@
+public class CardGame {
+    public static void main(String [] args) {
+        int myScore=0, yourScore=0;
+        PlayingCard myCard=new PlayingCard();
+        PlayingCard yourCard=new PlayingCard();
+        do  {
+            System.out.println("My card: " + myCard + "\n" + 
+						"Your card: " + yourCard);
+            if(yourCard.getFace() > myCard.getFace())
+                yourScore++;
+            else if(yourCard.sameCardAs(myCard))
+                myScore++;
+            else if (yourCard.getFace() == myCard.getFace())
+                yourScore++;
+            else
+                myScore++;
+           myCard.setCardValue();
+           yourCard.setCardValue();
+           System.out.println("I have " + myScore + " You have " + yourScore);
+        } while(myScore < 20 && yourScore < 20);
+        if(myScore > yourScore)
+            System.out.println("I win!");
+        else if (myScore < yourScore)
+            System.out.println("You win!");
+        else
+            System.out.println("It's a tie!");
+    }
+}

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class ErrorCatch1 {
+    public static void main (String [] args) {
+        int value=0; // number to be supplied by user
+        String input; // value read from keyboard
+        Scanner kb = new Scanner (System.in);
+        boolean again = true;
+        while(again) {
+            System.out.print ("Enter a number: ");
+            input = kb.nextLine();
+
+            try {
+                value = Integer.parseInt(input);
+                again = false;
+            } catch (NumberFormatException e) {
+                System.out.println (input + "is not valid.\n" +
+                    "Please enter digits only.");
+            }
+        }
+        System.out.println("Value is " + value);
+    }
+}
+
+import java.util.*;
+
+public class ErrorCatch2 {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        int x=0;
+        boolean notOk=true;
+        while (notOk) {
+            System.out.print("Enter a number: ");
+            try {
+                x = kb.nextInt();
+                notOk = false;
+            }
+            catch (InputMismatchException e){
+                System.out.println("Input was not valid - use digits only");
+                kb.nextLine();
+            }
+        }
+        System.out.println("You entered " + x);
+    }
+}

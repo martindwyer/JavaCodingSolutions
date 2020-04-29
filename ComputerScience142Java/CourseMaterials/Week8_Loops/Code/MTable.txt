@@ -1,0 +1,49 @@
+/**
+ * MTable class: prints out a multiplication table using user-specified limits
+ * @author Cate Sheller
+ * @version 15 March 2013
+ */
+public class MTable {
+    // instance variables: limits of table values
+    private int start,  // lower limit
+                size;   // upper limit      
+    // constructor: user specifies limits
+    public MTable(int a, int b) {
+        start = a;
+        size = b;
+    }
+    // default constructor: starts at 2, goes to 15
+    public MTable() {
+        start = 2;
+        size = 15;
+    }
+    // prints table headings
+    public void printHeadings() {
+        System.out.printf("%8s", "");
+        for (int x=start; x<=size; x++)
+            System.out.printf("%5d", x);
+        System.out.println();
+        for (int y=0; y<80; y++) // 80 columns standard console screen size
+            System.out.print("-");
+        System.out.println();
+    }
+    // prints table with specified dimensions
+    public void drawTable(){
+        for (int x=start; x<=size; x++)
+        {
+            for (int y=start; y<=size; y++)
+            {
+                if (y==start)
+                    System.out.printf("%7d%s", x, "|");
+                System.out.printf("%5d", (x*y));
+            }
+            System.out.println();
+        }
+    }
+    // test driver
+    public static void main (String [] args) {
+        MTable table = new MTable();
+        table.printHeadings();
+        table.drawTable();
+    }
+}

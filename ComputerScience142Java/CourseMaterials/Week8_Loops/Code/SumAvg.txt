@@ -1,0 +1,51 @@
+/**
+ * Finds sum & average of integers entered by user
+ * Demonstrates another way to do input validation
+ */
+import java.util.*;
+
+public class SumAvg
+{
+    public static void main(String [] args)
+    {
+        Scanner kb = new Scanner(System.in);
+        int sum = 0,    // running total of values
+            ct = 0,     // number of values read
+            num = 0;    // each individual value
+        double avg;     // calculated average of all numbers entered
+        String input = null; 
+        boolean valid = false;
+
+        while(input == null || !input.equalsIgnoreCase("n"))
+        {
+            System.out.print("Enter integer to add to sum, or n to quit: ");
+            input = kb.nextLine();
+            try
+            {
+                num = Integer.parseInt(input);
+                valid = true;
+            }
+            catch (NumberFormatException e)
+            {
+                if (input.equalsIgnoreCase("n"))
+                    System.out.println("OK, results follow...");
+                else
+                    System.out.println(input + " is not valid input. Try again.");
+            }
+            if (valid)
+            {
+                sum += num;
+                ct++;
+            }
+            valid = false;
+        }
+        if(ct > 0)
+        {
+            avg = (double)sum/ct;
+            System.out.printf("The sum of %d numbers is: ", ct);
+            System.out.printf("%d\nThe average is %.2f\n", sum, avg);
+        }
+        else
+            System.out.println("Sorry. No numbers, no results.");
+    }
+}

@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class StringBackwards {
+    public static char[] copyToArray (String s) {
+        char [] copy = new char[s.length()];
+        for (int n=0; n<s.length(); n++)
+            copy[n] = s.charAt(n);
+        return copy;
+    } 
+		
+    public static char[] reverseArray (char[] orig) {
+        char [] reverse = new char[orig.length];
+        int len = orig.length;
+        int x = 0;
+        for(len = len-1; len >=0; len--, x++)
+            reverse[x] = orig[len];
+        return reverse;
+    } 
+		
+    public static String copyToString(char [] array) {
+        String copy = "";
+        for(int x=0; x<array.length; x++)
+            copy = copy + array[x];
+        return copy;
+    }
+    
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String input;
+        do {
+            System.out.println("Enter some characters: ");
+            input = kb.nextLine();
+            String result = copyToString(reverseArray(copyToArray(input)));
+            System.out.println("Here it is again:");
+            System.out.println(result);
+            System.out.print("Do another (y/n)?: ");
+            input = kb.nextLine();
+        } while (!input.equalsIgnoreCase("n"));
+    }
+}

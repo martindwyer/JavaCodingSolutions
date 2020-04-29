@@ -1,0 +1,104 @@
+import java.io.*;
+import java.util.*;
+
+public class FileRead1 {
+    public static void main (String [] args) {
+        FileInputStream inf = null;
+        Scanner in = null;
+        try {
+            inf = new FileInputStream("fw1.txt");
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Critical error - could not open file");
+            System.exit(1);
+        }
+        System.out.println("here's some stuff from a file:");
+        in = new Scanner(inf);
+        String a = in.nextLine();
+        System.out.println(a);
+        a = in.nextLine();
+        System.out.println(a);
+        in.close();
+    }
+}
+
+import java.io.*;
+import java.util.*;
+
+public class FileRead2 {
+    public static void main (String [] args) throws FileNotFoundException  {
+        Scanner in = new Scanner(new FileInputStream("fw1.txt"));
+        System.out.println("here's some stuff from a file:");
+        String a = in.nextLine();
+        System.out.println(a);
+        a = in.nextLine();
+        System.out.println(a);
+        in.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+public class FileRead3 {
+    public static void main (String [] args) {
+        FileInputStream in = null;
+        boolean fileNotOpen = true;
+        Scanner kb = new Scanner(System.in);
+        while (fileNotOpen) {
+            System.out.print("Enter name of input file: ");
+            String fileName = kb.nextLine();
+            try {
+                in = new FileInputStream(fileName);
+                fileNotOpen = false;
+            } catch (FileNotFoundException e) {
+                System.out.println(fileName + " is not valid. Please try again.");
+            }
+        }
+        Scanner file = new Scanner(in);
+        System.out.println("here's some stuff from a file:");
+        String a = file.nextLine();
+        System.out.println(a);
+				String a = file.nextLine();
+        System.out.println(a);
+        file.close();
+    }
+}
+import java.io.*;
+import java.util.*;
+public class FileRead4 {
+    public static void main (String [] args) {
+        FileInputStream in = null;
+        boolean fileNotOpen = true;
+        Scanner kb = new Scanner(System.in);
+        while (fileNotOpen) {
+            System.out.print("Enter name of input file: ");
+            String fileName = kb.nextLine();
+            try {
+                in = new FileInputStream(fileName);
+                fileNotOpen = false;
+            } catch (FileNotFoundException e) {
+                System.out.println(fileName + " is not valid. Please try again.");
+            }
+        }
+        Scanner file = new Scanner(in);
+        System.out.println("here's some stuff from a file:");
+        while(file.hasNext()) { // loops through file, reading every line
+            String a = file.nextLine();
+            System.out.println(a);
+        }
+        file.close();
+    }
+}

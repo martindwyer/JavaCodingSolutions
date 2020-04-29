@@ -1,0 +1,104 @@
+// Version 3: same as version 2 except drawing methods are in their own class
+public class LoopArt3 {
+    public static void drawSquare() {
+        for (int x=0; x<8; x++) {
+            for (int y=0; y<8; y++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+    public static void drawHollowRectangle() {
+        for (int x=0; x<12; x++) {
+            for (int y=0; y<8; y++) {
+                if(x==0 || x==11 || y==0 || y==7)
+                    System.out.print("* ");
+                else // in the middle somewhere
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void drawRightTriangle() {
+        for (int x=0; x<8; x++) {
+            for (int y=0; y<=x; y++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+}	// code below is a separate file:
+import java.util.Scanner;
+public class LoopArt3Main {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String input;
+        do {
+            System.out.println("Choose a shape to see: ");
+            System.out.println("1 Square");
+            System.out.println("2 Hollow Rectangle");
+            System.out.println("3 Right Triangle");
+            System.out.println("Or type something else to quit");
+            System.out.print("Your choice: ");
+            input = kb.nextLine();
+            if (input.equals("1")) // draw square
+                LoopArt3.drawSquare();
+            else if (input.equals("2")) // draw hollow rectangle
+                LoopArt3.drawHollowRectangle();
+            else if (input.equals("3")) // draw right triangle
+                LoopArt3.drawRightTriangle();
+            else  // user wants to quit
+                System.out.println("OK then, goodbye");
+        } while (input.equals("1") || input.equals("2") || input.equals("3"));
+    }
+}
+// Version 4: same as version 3 except add size parameters to methods
+public class LoopArt4 {
+    public static void drawSquare(int size) {
+        for (int x=0; x<size; x++) {
+            for (int y=0; y<size; y++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+    public static void drawHollowRectangle(int wid, int ht) {
+        for (int x=0; x<wid; x++) {
+            for (int y=0; y<ht; y++) {
+                if(x==0 || x==wid-1 || y==0 || y==ht-1)
+                    System.out.print("* ");
+                else // in the middle somewhere
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+    public static void drawRightTriangle(int size) {
+        for (int x=0; x<size; x++) {
+            for (int y=0; y<=x; y++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+}	// code below is a separate file:
+import java.util.Scanner;
+public class LoopArt4Main {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String input;
+        do {
+            System.out.println("Choose a shape to see: ");
+            System.out.println("1 Square");
+            System.out.println("2 Hollow Rectangle");
+            System.out.println("3 Right Triangle");
+            System.out.println("Or type something else to quit");
+            System.out.print("Your choice: ");
+            input = kb.nextLine();
+            if (input.equals("1")) // draw square
+                LoopArt3.drawSquare(8);
+            else if (input.equals("2")) // draw hollow rectangle
+                LoopArt3.drawHollowRectangle(5, 10);
+            else if (input.equals("3")) // draw right triangle
+                LoopArt3.drawRightTriangle(9);
+            else  // user wants to quit
+                System.out.println("OK then, goodbye");
+        } while (input.equals("1") || input.equals("2") || input.equals("3"));
+    }
+}

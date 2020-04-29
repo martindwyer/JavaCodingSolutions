@@ -1,0 +1,7 @@
+/*
+	Student:  	Martin Dwyer
+	Assignment: 	Unit 3 Application
+	Class: 		ITEC 6130, Walden University
+	Date: 		Week ending March 24, 2019
+	Description: 	This application illustrates the use of abstract classes
+*/

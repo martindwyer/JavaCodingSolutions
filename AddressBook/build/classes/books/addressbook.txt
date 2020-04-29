@@ -1,0 +1,7 @@
+Martin Dwyer,168 16th Ave SW,Cedar Rapids,IA,52404,3198998956,martin.dwyer@waldenu.edu,bdo-tech.com
+Fred Flintsone,100 Main Street,Bedrock,AZ,65789,5155551345,fred@flintstones.com,flintstones.com
+Wilma Flintstone,100 Main Street,Bedrock,AZ,65789,5155551345,wilma@flintstones.com,flintstones.com
+Barney Rubble,102 Main Street,Bedrock,AZ,65789,5155559999,barney@rubbles.com,flintstones.com
+Betty Rubble,102 Main Street,Bedrock,AZ,65789,5155559999,betty@rubbles.com,flintstones.com
+Pebbles Flintstone,Arizona State University,Phoenix,AZ,85281,8552785080,pebbles@asu.edu,asu.edu
+Bamm Bamm Rubble,Arizona State University,Phoenix,AZ,85281,8552785080,bammbamm@asu.edu,asu.edu

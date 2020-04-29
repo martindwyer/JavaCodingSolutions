@@ -1,0 +1,76 @@
+/**
+ * Utility class for performing input routines
+ *
+ * @author Cate Sheller
+ * @version 23-October-2018
+ */
+ 
+public class Input {
+
+    /**
+     * ASCII values of number characters
+     */
+    public static final char ZERO = '0';
+    public static final char NINE = '9';
+    
+    /**
+     * Extracts an integer from a String that may contain extraneous data
+     * @param data: String to be parsed
+     * @return: int value extracted from String; 0 if no int data found
+     */
+    public static int getInt (String data) {
+        int num = 0;                // return value
+        boolean negative = false;   // set to true if '-' found before any digits
+        char ch;                    // each character isolated from data
+        int sct = 0;                // counter for String parsing
+        if (data == null) {
+            throw new IllegalArgumentException("Data String cannot be empty");
+        }
+        do {
+            ch = data.charAt(sct);          // extract a character
+            if(num == 0 && ch == '-') {     // check for negative
+                negative = true;            // before start of digits
+            }
+            if (ch >= ZERO && ch <=NINE) {  // if character is a digit
+                num *= 10;                  // shift existing number 1 decimal place
+                num += (int)(ch - ZERO);    // incorporate new rightmost digit
+            } 
+            sct++;
+        } while (sct < data.length());
+        if (negative) {
+            num *= -1;
+        }
+        return num;
+    }
+ 
+
+
+
+
+
+
+ 
+    /**
+     * Extracts a double value from a String that may contain extraneous data
+     * @param data: String to be parsed
+     * @return: double value extracted from String; 0.0 if no numbers found
+     */
+    public static double getDouble (String data) {
+        double num = 0.0;                   // return value
+        int pointPosn = data.indexOf('.');  // position of decimal point in data
+        int numDigits = 0;                  // count of digits after decimal
+        num = getInt(data);                 // extract digits as whole number
+        if (pointPosn >= 0 && pointPosn < data.length()-1) { // if point found
+            data = data.substring(pointPosn+1);   // isolate portion after point
+            for (int x=0; x<data.length(); x++) { // count digits after point
+                if (data.charAt(x) >= ZERO && data.charAt(x) <= NINE) {
+                    numDigits++;
+                }
+            }
+        }
+        if (numDigits > 0) {
+            num = num / Math.pow(10, numDigits);
+        }
+        return num;
+    }        
+}

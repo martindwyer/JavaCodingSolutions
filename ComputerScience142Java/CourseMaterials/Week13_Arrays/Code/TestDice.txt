@@ -1,0 +1,65 @@
+import java.util.*;
+public class TestDice {
+    private Die d1, d2;
+    private int [] rollCounter;
+
+    public TestDice() {
+        d1 = new Die();
+        d2 = new Die();
+        rollCounter = new int[13];
+    }
+
+    public int rollDice() {
+        return d1.roll() + d2.roll();
+    }
+
+    public boolean testFair(int numTests) {
+        for (int x=0; x<numTests; x++) {
+            rollCounter[rollDice()]++;
+        }
+        return (rollCounter[7] / (double)numTests) >= (1.0/6.0);
+    }
+
+    public void resetCounters() {
+        for (int x=0; x<rollCounter.length; x++)
+            rollCounter[x] = 0;
+    }
+
+    public String toString() {
+        String result="";
+        for(int x=2; x<rollCounter.length; x++)
+            result = result + "rolls of " + x + ": " + rollCounter[x] + "\n";
+        return result;
+    }
+
+    public static void main(String [] args) {
+        TestDice tester = new TestDice();
+        Scanner kb = new Scanner(System.in);
+        String input;
+        int numTimes;
+        do {
+            System.out.print("How many times do you want to roll (0 to quit): ");
+            input = kb.nextLine();
+            try {
+                numTimes = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println(input + " is not a number - using 1000");
+                numTimes=1000;
+            }
+            if (numTimes > 0) {
+                if (tester.testFair(numTimes))
+                    System.out.println("Dice are fair");
+                else
+                    System.out.println("Dice are loaded");
+                System.out.println("Detailed results:");
+                System.out.println(tester);
+                System.out.print("Run tests again? (y/n): ");
+                input = kb.nextLine();
+                if (input.equalsIgnoreCase("y")) 
+                    tester.resetCounters();
+                else
+                    numTimes=0;
+            }
+        }while (numTimes > 0);
+    }
+}

@@ -1,0 +1,68 @@
+import java.io.*;
+import java.util.*;
+
+public class FileWrite1 {
+    public static void main(String [] args) {
+        PrintWriter out = null;
+        FileOutputStream fo = null;
+        try {
+            fo = new FileOutputStream("fw1.txt");
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Could not open file - exiting");
+            System.exit(1);
+        }
+        out = new PrintWriter(fo);
+        System.out.println("Writing stuff to the file");
+        out.println("stuff");
+        out.println("more stuff");
+        out.println("more and more stuff");
+        out.println("enough stuff");
+        out.close();
+    }
+}
+
+import java.io.*;
+import java.util.*;
+
+public class FileWrite2 {
+    public static void main(String [] args) {
+        PrintWriter out = null;
+        FileOutputStream fo = null;
+        try {
+            fo = new FileOutputStream("fw1.txt", true);
+            // opens file to append, not destroy
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("Could not open file - exiting");
+            System.exit(1);
+        }
+        out = new PrintWriter(fo);
+        System.out.println("Writing stuff to the file");
+        out.println("stuff");
+        out.println("more stuff");
+        out.println("more and more stuff");
+        out.println("enough stuff");
+        out.close();
+    }
+}
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class FileWrite3 {
+    public static void main(String [] args)throws FileNotFoundException {
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Enter name of output file: ");
+        String str = kb.nextLine();
+        PrintWriter out = new PrintWriter(new FileOutputStream(str));
+        System.out.println("Enter some text to write to the file");
+        str = kb.nextLine();
+        out.println(str);
+        System.out.println("Wrote " + str + " to file");
+        out.close();
+    }
+}

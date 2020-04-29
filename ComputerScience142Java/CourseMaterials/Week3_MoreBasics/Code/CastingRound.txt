@@ -1,0 +1,26 @@
+/**
+ * CastingRound
+ * @author Cate Sheller
+ * @version 27 January 2017
+ * 
+ * Demonstrates type casting between int & double values
+ */
+import java.util.Scanner;
+
+public class CastingRound {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner (System.in);
+        double demoValue = Math.random();
+        System.out.println("Here is a random value: " + demoValue);
+        System.out.print("How many digits do you want before the decimal? ");
+        int wholeDigits = kb.nextInt();
+        System.out.print("How many digits after the decimal? ");
+        int fracDigits = kb.nextInt();
+        int wholePart = (int)(demoValue * Math.pow(10, wholeDigits));
+        int fracPart = (int)(demoValue * 
+                               Math.pow(10, wholeDigits+fracDigits)-
+                               wholePart * Math.pow(10, fracDigits) + .5);
+        demoValue = wholePart + fracPart / Math.pow(10, fracDigits);
+        System.out.println("Here's your result: " + demoValue);
+    }
+}

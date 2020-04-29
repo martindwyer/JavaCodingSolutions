@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="Bank">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>6</Ce>
+                <A>0</A>
+                <I>0.86</I>
+                <D>0.14</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Bank.java">
+                    Bank.Bank
+                </Class>
+                <Class sourceFile="Operations.java">
+                    Bank.Operations
+                </Class>
+                <Class sourceFile="OperationsTest.java">
+                    Bank.OperationsTest
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>accounts</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.text</Package>
+                <Package>javax.swing</Package>
+                <Package>org.junit</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>accounts</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="TestingSuite">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BankTestSuite.java">
+                    TestingSuite.BankTestSuite
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>org.junit.runners</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="accounts">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>5</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>4</Ce>
+                <A>0.17</A>
+                <I>0.8</I>
+                <D>0.03</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="BankAccount.java">
+                    accounts.BankAccount
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BankAccountTest.java">
+                    accounts.BankAccountTest$BankAccountImpl
+                </Class>
+                <Class sourceFile="CheckingAccount.java">
+                    accounts.CheckingAccount
+                </Class>
+                <Class sourceFile="CheckingAccountTest.java">
+                    accounts.CheckingAccountTest
+                </Class>
+                <Class sourceFile="SavingsAccount.java">
+                    accounts.SavingsAccount
+                </Class>
+                <Class sourceFile="SavingsAccountTest.java">
+                    accounts.SavingsAccountTest
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>Bank</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>org.junit</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>Bank</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.text">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.junit">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.junit.runners">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="Bank">
+            <Package>accounts</Package>
+            <Package>Bank</Package>
+        </Package>
+
+        <Package Name="accounts">
+            <Package>Bank</Package>
+            <Package>accounts</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

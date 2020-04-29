@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class SumAvgCount {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        int howMany=0;
+        int ctr=0;
+        int sum=0;
+        double avg=0;
+        int thisNum=0;
+        while (howMany<=0) {
+            System.out.print("How many values do you want to enter? ");
+            try {
+                howMany=kb.nextInt();
+            } catch(InputMismatchException e) {
+                System.out.println("You must enter a positive number.");
+                kb.nextLine(); // cleans up input stream
+            }
+        }
+        // use loop to read values & add to sum:
+        while (ctr < howMany) {
+            System.out.print("Enter an integer value: ");
+            try {
+                thisNum=kb.nextInt();
+                sum += thisNum;
+                ctr++;
+            } catch(InputMismatchException e) {
+                System.out.println("That was not a valid number. Try again.");
+                kb.nextLine();
+            }
+        } // end of data-gathering loop
+        avg = (double)sum/howMany;
+        System.out.printf("The sum of your values was %d\n", sum);
+        System.out.printf("The average was %.2f\n", avg);
+    }
+}

@@ -1,0 +1,51 @@
+import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+
+public class Circles extends JFrame {
+    static Random rg = new Random();    // random # generator shared by all
+                                        // instances of this class
+    private String input;               // used to read in # of circles
+    private int numCircles;             // holds # of circles
+    
+    public Circles() {
+        setSize(500,500);
+        setAlwaysOnTop(true);
+        setTitle("Random Circles");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+    public void getInput() {
+        input = JOptionPane.showInputDialog
+				(this, "How many circles do you want to see?");
+        numCircles = Integer.parseInt(input);
+    }
+        
+    
+    public static void main (String [] args) {
+        Circles win = new Circles();
+        win.getInput();
+        win.setVisible(true);
+    }
+    
+    public void paint (Graphics g) {
+        super.paint(g);
+        int ct = 0;         // 	keeps track of circles drawn so far
+        int x, y;           // 	coordinates for top left corner of each circle's
+														// 	bounding rectangle - randomly generated
+        Color randColor;    // 	color of each circle; uses 3 random numbers to
+														// 	instantiate a color - syntax is: 
+														//	randColor = new Color(#,#,#); where
+                            // 	each "#" is replaced by a random value 0-255
+        
+        while(ct < numCircles) {
+            randColor = new Color
+						(rg.nextInt(256), rg.nextInt(256), rg.nextInt(256));
+            g.setColor(randColor);
+            x = rg.nextInt(getWidth());
+            y = rg.nextInt(getHeight());
+            g.fillOval(x,y,20,20);
+            ct++;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+import java.util.*;
+public class DoWhileLoops {
+    public static void main (String [] args) {
+        Scanner kb = new Scanner(System.in);
+        int sum = 0,
+        ct = 0;
+        String input = "";
+        do {
+            System.out.println
+            ("Enter a positive whole number, or q to quit.");
+            int n=0, sct=0;
+            char c;
+            input = kb.nextLine();
+            do {
+                c = input.charAt(sct);
+                if (c >= '0' && c <= '9')
+                {
+                    n = n * 10;
+                    n += (int)(c - '0');
+                }
+                sct++;
+            } while (sct < input.length());
+            if (n > 0) {
+                sum += n;
+                ct++;
+            }
+        } while (!input.equalsIgnoreCase("q"));
+        System.out.printf("The sum of the %d numbers you entered is: %d\n", ct, sum);
+        if(ct > 0)
+            System.out.printf("The average is: %.2f", (double)sum/ct);
+        else
+            System.out.printf("No numbers entered - can't compute average");
+    }
+}

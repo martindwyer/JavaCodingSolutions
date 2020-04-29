@@ -1,0 +1,98 @@
+import java.util.*;
+
+public class Sorts
+{
+    int [] numbers;
+    int size;
+    Random rg;
+    
+    public Sorts (int sz)
+    {
+        size = sz;
+        rg = new Random();
+        numbers = new int[size];
+        populateNScramble();
+    }
+    
+    public Sorts ()
+    {
+        this(100);
+    }
+    
+    public void populate()
+    {
+        for (int x=0; x<size; x++)
+            numbers[x] = rg.nextInt(size*2);
+    }
+    
+    public void populateNScramble ()
+    {
+        for (int x=0; x<size; x++)
+            numbers[x] = x+1;
+        for (int y=0; y<size; y++)
+        {
+            int t1 = rg.nextInt(size);
+            int t2 = rg.nextInt(size);
+            while (t1 == t2)
+                t1 = rg.nextInt(size);
+            int tmp = numbers[t1];
+            numbers[t1]=numbers[t2];
+            numbers[t2]=tmp;
+        }
+    }
+    
+    public void printArray () {
+        for (int x=0; x<numbers.length; x++)
+        {
+            if (x % 10 == 0)
+                System.out.print("\n");
+            System.out.print (numbers[x] + "\t");
+        }
+        System.out.println();
+    }
+
+    
+    public void selectionSort () {
+        int mindex, len, tmp;
+        len = numbers.length;
+        for (int x = 0; x <= len-2; x++)
+        {
+            mindex = x;
+            for (int y = x+1; y <= len-1; y++)
+                if (numbers[y] < numbers[mindex])
+                    mindex = y;
+            tmp = numbers[x];
+            numbers[x] = numbers[mindex];
+            numbers[mindex] = tmp;
+            // comment out line below if you don't want to see sort in progress
+            printArray();
+        }
+    }
+    
+    public void insertionSort () {
+        int x, y, tmp;
+        for (x=1; x<numbers.length; x++)
+        {
+            tmp = numbers[x];
+            for (y=x; y>0 && numbers[y-1] > tmp; y--)
+                numbers[y] = numbers[y-1];
+            numbers[y] = tmp;
+            // comment out line below if you don't want to see sort in progress
+            printArray();
+        }
+    }
+    
+    public static void main(String [] args)
+    {
+        Sorts mySorts = new Sorts(8);
+        System.out.println("Original array");
+        mySorts.printArray();
+        System.out.println("SelectionSort in progress");
+        mySorts.selectionSort();
+        System.out.println ("New array");
+        mySorts.populateNScramble();
+        mySorts.printArray();
+        System.out.println("InsertionSort in progress");
+        mySorts.insertionSort();
+    }
+}

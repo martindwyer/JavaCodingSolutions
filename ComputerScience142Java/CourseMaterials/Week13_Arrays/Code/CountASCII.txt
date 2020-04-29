@@ -1,0 +1,66 @@
+import java.util.*;
+import java.io.*;
+
+public class CountASCII {
+    private int [] counter;
+    public CountASCII () {
+        counter = new int[128];
+        reset();
+    }
+    public void reset() {
+        for (int x=0; x<counter.length; x++) {
+            counter[x]=0;
+        }
+    }
+    public Scanner openFile (String fileName) throws FileNotFoundException {
+        Scanner file = new Scanner(new FileInputStream(fileName));
+        return file;
+    }
+    public void closeFile (Scanner f) { f.close(); }
+    public void readAndCount(Scanner theFile) {
+        String input = null;
+        while(theFile.hasNext()) {
+            input = theFile.nextLine();
+            int ctr=0;
+            while (ctr < input.length()) {
+                char c = input.charAt(ctr);
+                int ascii = (int)c;
+                counter[ascii]++;
+                ctr++;
+            }
+        }
+        closeFile(theFile);
+    }
+    public String toString() {
+        String bigOlString="Value\tChar\tCount\n";
+        for (int x=33; x<127; x++) {
+            bigOlString = bigOlString + x + "\t";
+            bigOlString = bigOlString + (char)x + "\t";
+            bigOlString = bigOlString + counter[x] + "\n";
+        }
+        return bigOlString;
+    }
+    public static void main(String [] args) {
+        CountASCII count = new CountASCII();
+        Scanner kb = new Scanner (System.in);
+        Scanner file = null;
+        boolean done = false;
+        while(!done) {
+            System.out.print("Enter the name of a file to analyze: ");
+            String fName = kb.nextLine();
+            try {
+                file = count.openFile(fName);
+                done = true;
+            } catch (FileNotFoundException e) {
+                System.out.println("Try again");
+            }
+        }
+        count.readAndCount(file);
+        System.out.println("Results:");
+        System.out.println(count);
+    }
+}
+                
+                
+        
+            

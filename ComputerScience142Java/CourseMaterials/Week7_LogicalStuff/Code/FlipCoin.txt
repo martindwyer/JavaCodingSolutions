@@ -1,0 +1,10 @@
+import java.util.Random;
+public class FlipCoin {
+    public static void main(String [] args) {
+        int coin = (int)(10 * Math.random());
+        if (coin % 2 == 0)  // coin is even
+            System.out.println("Heads");
+        else
+            System.out.println("Tails");
+    }
+}

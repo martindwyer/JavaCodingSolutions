@@ -1,0 +1,32 @@
+import javax.swing.JFrame;
+import java.awt.Graphics;
+import java.awt.Color;
+import java.util.Random;
+
+public class GraphicsPlay extends JFrame {
+    public GraphicsPlay () {
+        setSize(500,500);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setAlwaysOnTop(true);
+    }
+    
+    public void paint(Graphics g) {
+        super.paint(g);
+        Random rg = new Random();
+        g.setColor(Color.BLUE);
+        g.fillRect(0,0,this.getWidth(), this.getHeight());
+        g.setColor(Color.YELLOW);
+        int [] xValues = {rg.nextInt(getWidth())+10, rg.nextInt(getWidth())+10,
+                          rg.nextInt(getWidth())+10, rg.nextInt(getWidth())+10,
+                          rg.nextInt(getWidth())+10, rg.nextInt(getWidth())+10};
+        int [] yValues = {rg.nextInt(getHeight())+10, rg.nextInt(getHeight())+10,
+                          rg.nextInt(getHeight())+10, rg.nextInt(getHeight())+10,
+                          rg.nextInt(getHeight())+10, rg.nextInt(getHeight())+10};
+        g.drawPolygon(xValues, yValues, xValues.length);
+    }
+    
+    public static void main(String [] args) {
+        GraphicsPlay player = new GraphicsPlay();
+        player.setVisible(true);
+    }
+}

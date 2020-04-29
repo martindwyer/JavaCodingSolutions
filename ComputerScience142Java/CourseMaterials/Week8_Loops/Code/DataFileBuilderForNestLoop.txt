@@ -1,0 +1,51 @@
+import java.util.*;
+import java.io.*;
+
+public class DataFileBuilderForNestLoop
+{
+    public static void main (String [] args)
+    {
+        Random rg = new Random();
+        PrintWriter file = null;
+        FileOutputStream f = null;
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Enter name for output file: ");
+        String fName = kb.nextLine();
+        try
+        {
+            f = new FileOutputStream(fName, true);
+        }
+        catch (FileNotFoundException e)
+        {
+            System.out.println("Couldn't open output file.  Why?");
+            System.exit(1);
+        }
+        file = new PrintWriter(f);
+        int id, numReadings, thisReading;
+        System.out.println("Generating data:");
+        for (int x=0; x<rg.nextInt(100)+25; x++)
+        {
+            id = rg.nextInt(9000) + 1000;
+            System.out.print(id + " ");
+            file.print(id + " ");
+            numReadings = rg.nextInt(6)+4;
+            System.out.print(numReadings + " ");
+            file.print(numReadings + " ");
+            for(int y=0; y<numReadings; y++)
+            {
+                thisReading = rg.nextInt(100)+100;
+                System.out.print(thisReading + " ");
+                file.print(thisReading + " ");
+            }
+            System.out.println();
+            file.println();
+        }
+        file.close();
+    }
+}
+
+
+
+
+
+

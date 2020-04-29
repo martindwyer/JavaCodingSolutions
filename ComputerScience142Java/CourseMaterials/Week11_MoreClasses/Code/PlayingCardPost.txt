@@ -1,0 +1,77 @@
+import java.util.Random;
+public class PlayingCard {
+    private int face; // 1 = Ace, 13 = King
+    private char suit;// Hearts, Spades, Diamonds, Clubs
+    public static final Random rg = new Random();
+
+    public PlayingCard() {
+        setFace();
+        setSuit();
+    }
+
+    public PlayingCard (int f, char s) {
+        setFace(f);
+        setSuit(s);
+    }
+
+    public int getFace() {
+        return face;
+    }
+
+    public char getSuit() {
+        return suit;
+    }
+
+    public void setFace() {
+        face = rg.nextInt(13)+1;
+    }
+
+    public void setFace(int f) {
+        if(!(f >= 1 && f <= 13))
+            throw new IllegalArgumentException();
+        face = f;
+    }
+
+    public void setSuit() {
+        int s = rg.nextInt(4);
+        switch(s) {
+            case 0: suit = 'H'; break;
+            case 1: suit = 'S'; break;
+            case 2: suit = 'D'; break;
+            case 3: suit = 'C'; break;
+        }
+    }
+
+    public void setSuit(char s) {
+        s = Character.toUpperCase(s);
+        if(s == 'H' || s == 'S' || s == 'D' || s == 'C') {
+            suit = s;         
+        }
+        else { // s was invalid, so use random value instead
+            setSuit();
+        }
+    }
+
+    public void setCardValue() {
+        setFace();
+        setSuit();
+    }
+
+    public void setCardValue(int f, char s) {
+        setFace(f);
+        setSuit(s);
+    }
+
+    public boolean sameCardAs(PlayingCard other) {
+        if (this.face == other.getFace() &&
+        this.suit == other.getSuit())
+            return true;
+        return false;
+        // shorthand version:
+        //return face==other.face && suit == other.suit;
+    }
+
+    public String toString() {
+        return "not done yet";
+    }
+}

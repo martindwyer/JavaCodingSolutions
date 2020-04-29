@@ -1,0 +1,2 @@
+# BlanksStory
+ This application provides a Java project application to play  a "Fill in the Blanks" game.  The application reads in a story in text format,   with items to be completed in brackets.  The user is prompted based on the info in the brackets, and the information is placed into a completed story.  The  completed story is presented to the user on the screen.   It was originally written for developmental purposes and is shared here publicly for the same purpose.

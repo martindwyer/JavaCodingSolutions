@@ -1,0 +1,52 @@
+/**
+ * Test harness for Input class
+ * @author Cate Sheller
+ * @version 23-October-2018
+ */
+import java.util.Scanner;
+import java.util.Random;
+public class InputTester {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        Random rg = new Random();
+        String tester;      // randomly built string for testing
+        char ch;            // random character for string
+        int numTests,       // number of random tests to run
+            maxLength;      // length of random strings to test
+        numTests = rg.nextInt(10) + 10;  
+        maxLength = rg.nextInt (10) + 5;      
+        System.out.println("Running " + numTests + " random tests"); 
+        for (int x = 0; x < numTests; x++) {
+            tester = "";        // new string for each test 
+            for (int y = 0; y < maxLength; y++) {
+                ch = (char)(rg.nextInt(92) + 33);   // generate printable character
+                if (rg.nextInt() < 0) {             // with 50% chance of making
+                    tester = tester + ch;           // it into string
+                }
+                else if (rg.nextInt() < 100000) {   // chance of a '.' appearing
+                    tester = tester + '.';
+                }
+                else if (rg.nextInt() < 1000) {     // chance of a '-' appearing
+                    tester = tester + '-';
+                } 
+                else {                              // otherwise, include a digit
+                    tester = tester + rg.nextInt(10);
+                }
+            }
+            System.out.println("Testing string: " + tester);
+            System.out.println("getInt returns: " + Input.getInt(tester));
+            System.out.println("getDouble returns: " + Input.getDouble(tester));
+        }
+        System.out.print("Run interactive tests (enter y if so): ");
+        ch = kb.nextLine().charAt(0);
+        while (ch == 'y' || ch == 'Y') {
+            System.out.print("Enter a string to test: ");
+            tester = kb.nextLine();
+            System.out.println("You entered: " + tester);
+            System.out.println("getInt returns: " + Input.getInt(tester));
+            System.out.println("getDouble returns: " + Input.getDouble(tester));
+            System.out.print("Test another? (enter y to continue): ");
+            ch = kb.nextLine().charAt(0);
+        }            
+    }
+}

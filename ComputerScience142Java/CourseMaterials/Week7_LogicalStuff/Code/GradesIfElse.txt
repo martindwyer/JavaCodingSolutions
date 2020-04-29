@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class GradesIfElse {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Enter your current percentage: ");
+        double score = kb.nextDouble();
+        System.out.printf("Based on your score of %.2f, your current grade is: ", score);
+        if(score >= 90) {
+            System.out.print("A");
+			System.out.println();
+        }
+        else if (score >= 80) {
+            System.out.print("B");      
+            System.out.println();
+        }
+        else if (score >= 70) {
+            System.out.print("C");
+            System.out.println();
+        }
+        else if (score >= 60) {
+            System.out.print("D");
+        }
+        else
+            System.out.println("F");
+    }
+}

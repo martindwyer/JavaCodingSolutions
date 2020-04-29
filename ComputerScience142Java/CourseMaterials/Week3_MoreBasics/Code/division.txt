@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Division {
+    public static void main(String [] args) {
+        Random rg = new Random();
+        int x, y;
+        double z;
+        x = rg.nextInt(100)+1;
+        y = rg.nextInt(100)+1;
+        System.out.println("x=" + x + " y=" + y);
+        System.out.println("x/y=" + (x/y));
+        System.out.println("y/x=" + (y/x));
+        System.out.println("x%y=" + (x%y));
+        System.out.println("y%x=" + (y%x));
+        z = (double)x/y;
+        System.out.println("z=" + z);
+    }
+}

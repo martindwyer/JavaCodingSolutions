@@ -1,0 +1,27 @@
+/**
+ * PigLatin: translates an English word into Pig Latin
+ * @author Cate Sheller
+ * @version 15 August 2018
+ */
+import java.util.Scanner;
+public class PigLatin {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String wordb4,      // word entered by user
+				firstL,     // first letter of word
+        wordAfter;  // word after translation
+        System.out.print("Enter a word: ");
+        wordb4 = kb.next();
+        // Isolate first letter of word:
+        firstL = wordb4.substring(0,1);
+        // reconfigure word without first letter:
+        wordb4 = wordb4.substring(1);
+        // construct back half of new word:
+        wordAfter = firstL + "ay";
+        // put new word together:
+        wordAfter = wordb4 + wordAfter;
+        // Output results:
+        System.out.println("Your word " + firstL + wordb4 + " is " +
+            wordAfter + " in Pig Latin.");
+    }
+}
