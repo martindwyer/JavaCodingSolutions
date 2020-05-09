@@ -204,7 +204,6 @@ public class InputOutput {
      * Prompts user for search criteria and displays results
      * 
      * @param addressBook a Java TreeMap object of form TreeMap<String,Person>
-     * @return 
      */
     public static Person searchAddressBook(TreeMap<String, Person> addressBook) {
         String input = "";

@@ -1,2 +1,0 @@
-# TreeDataStructureIllustration
- The Java application here utilizes a tree data structure creating only as many branches that are necessary to capture the data for each branch.  The structure itself is located in composite > MaterialTreeCampus.  While this is provided under a general public license, students using this work for academic purposes should be careful to follow their school's academic guidelines.

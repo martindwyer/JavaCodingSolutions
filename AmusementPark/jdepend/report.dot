@@ -1,0 +1,47 @@
+
+digraph g {
+        graph [
+	    rankdir = "LR"
+	];
+	node [
+	    fontsize = "12"
+	    fontname = "Courier"
+	    shape = "ellipse"
+	];
+	edge[];
+	"java.io" [
+        label="java.io | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.lang" [
+        label="java.lang | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "java.util" [
+        label="java.util | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "javax.swing" [
+        label="javax.swing | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "wk8projdwyerm" [
+        label="wk8projdwyerm | Total Classes: 4"
+	shape="record"
+	color=".99 0 .9"
+	style=filled
+    ];
+    "wk8projdwyerm" -> "java.io"
+    "wk8projdwyerm" -> "java.lang"
+    "wk8projdwyerm" -> "java.util"
+    "wk8projdwyerm" -> "javax.swing"
+    
+}

@@ -1,0 +1,30 @@
+Colgate Toothpaste
+2
+2.99
+Bounty Paper Towels
+1
+1.49
+Kleenex Tissue
+1
+2.49
+Glad Garbage Bags
+1
+5.99
+Tyson Hot Wings
+1
+16.99
+Peanut Butter
+1
+2.99
+Sunbeam Bread
+1
+2.48
+Strawberry Jelly
+1
+3.28
+Tyson Chicken Breast
+1
+11.48
+Brussell Sprouts
+1
+2.49

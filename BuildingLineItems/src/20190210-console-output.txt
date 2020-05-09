@@ -1,0 +1,92 @@
+run:
+------------------------------
+Testing the LineItem Class:  
+Creating three new instance objects with: 
+LineItem productOne = new LineItem("Colgate Toothpaste",2,2.99);
+LineItem productTwo = new LineItem("Bounty Paper Towels",1,1.49);
+LineItem productThree = new LineItem("Kleenex Tissue",1,2.49);
+
+Testing Getter and Setter Methods on productOne:
+
+Original quantity: 2
+Revised quantity: 4
+
+Original price: 2.99
+Revised price: 3.35
+
+Testing toString() and totalPrice() methods:
+
+Colgate Toothpaste       qty  4 @  $3.35    $13.40
+Bounty Paper Towels      qty  1 @  $1.49     $1.49
+Kleenex Tissue           qty  1 @  $2.49     $2.49
+
+
+------------------------------
+Testing the Transaction Class:  
+Created a new instance of Transaction class with: 
+Transaction shoppingCart = new Transaction(customerID, customerName);
+Successfully added 10 line items from lineitems.txt
+The method addLineItem() was used to add each item.
+
+ORIGINAL SHOPPING CART
+
+SHOPPING CART
+
+Customer Name:	Fred Flintstone
+Customer ID:  	456123
+
+Item Description                             Total
+Colgate Toothpaste       qty  2 @  $2.99     $5.98
+Bounty Paper Towels      qty  1 @  $1.49     $1.49
+Kleenex Tissue           qty  1 @  $2.49     $2.49
+Glad Garbage Bags        qty  1 @  $5.99     $5.99
+Tyson Hot Wings          qty  1 @ $16.99    $16.99
+Peanut Butter            qty  1 @  $2.99     $2.99
+Sunbeam Bread            qty  1 @  $2.48     $2.48
+Strawberry Jelly         qty  1 @  $3.28     $3.28
+Tyson Chicken Breast     qty  1 @ $11.48    $11.48
+Brussell Sprouts         qty  1 @  $2.49     $2.49
+
+Transaction Total                           $55.66
+
+
+Successfully updated line items with the updateItem() method
+shoppingCart.updateItem("Kleenex Tissue",3,2.49);
+shoppingCart.updateItem("Glad Garbage Bags",1,6.48);
+
+Kleenex Tissue quantity increased to 3
+Glad Garbage Bags price changed to $6.48
+
+
+REVISED SHOPPING CART
+
+SHOPPING CART
+
+Customer Name:	Fred Flintstone
+Customer ID:  	456123
+
+Item Description                             Total
+Colgate Toothpaste       qty  2 @  $2.99     $5.98
+Bounty Paper Towels      qty  1 @  $1.49     $1.49
+Kleenex Tissue           qty  3 @  $2.49     $7.47
+Glad Garbage Bags        qty  1 @  $6.48     $6.48
+Tyson Hot Wings          qty  1 @ $16.99    $16.99
+Peanut Butter            qty  1 @  $2.99     $2.99
+Sunbeam Bread            qty  1 @  $2.48     $2.48
+Strawberry Jelly         qty  1 @  $3.28     $3.28
+Tyson Chicken Breast     qty  1 @ $11.48    $11.48
+Brussell Sprouts         qty  1 @  $2.49     $2.49
+
+Transaction Total                           $61.13
+
+
+
+Testing the getLineItem() method with: 
+shoppingCart.getLineItem("Glad Garbage Bags")
+
+Searching for 'Glad Garbage Bags' in shopping cart: 
+Glad Garbage Bags        qty  1 @  $6.48     $6.48
+
+Searching for 'Pickles' in shopping cart: 
+Pickles not found
+BUILD SUCCESSFUL (total time: 2 seconds)
