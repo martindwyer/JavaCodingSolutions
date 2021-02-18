@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="murach1" level="project" />
+    <orderEntry type="library" name="ch10_MurachLib" level="project" />
+    <orderEntry type="library" name="dist" level="project" />
+    <orderEntry type="library" name="ch10_MurachMod1" level="project" />
+    <orderEntry type="library" name="ch10_MurachLib1" level="project" />
+    <orderEntry type="library" name="ch10_MurachMod" level="project" />
+    <orderEntry type="library" name="murach" level="project" />
+    <orderEntry type="module" module-name="ch14_ex1_Invoice" />
+    <orderEntry type="module" module-name="ch10_ex2_LineItem" />
+    <orderEntry type="module" module-name="ch18_ex2_AreaAndPerimeter" />
+    <orderEntry type="module" module-name="ch10_ex1_LineItem1" />
+    <orderEntry type="module" module-name="ch12_Invoice" />
+    <orderEntry type="module" module-name="ch14_ex1_Invoice_sol" />
+    <orderEntry type="module" module-name="ch21_ProductManager" />
+    <orderEntry type="module" module-name="ch10_ex1_LineItem" />
+    <orderEntry type="module" module-name="ch17_FutureValueFX1" />
+    <orderEntry type="module" module-name="ch10_MurachLib1" />
+    <orderEntry type="module" module-name="ch18_ex1_FutureValue" />
+    <orderEntry type="module" module-name="ch10_ex2_LineItem1" />
+    <orderEntry type="module" module-name="ch15_ex3_ProductManager1" />
+    <orderEntry type="module" module-name="ch18_ex2_AreaAndPerimeter_sol" />
+    <orderEntry type="module" module-name="ch19_ex1_FutureValue" />
+    <orderEntry type="module" module-name="ch06_ex4_FutureValue_sol" />
+    <orderEntry type="module" module-name="ch18_ex1_FutureValue_sol" />
+    <orderEntry type="module" module-name="ch15_ex3_ProductManager_sol1" />
+    <orderEntry type="module" module-name="ch21_ex2_ProductManager_sol1" />
+    <orderEntry type="module" module-name="ch18_FutureValueSwingValidation" />
+    <orderEntry type="module" module-name="ch15_ProductManager" />
+    <orderEntry type="module" module-name="ch15_ProductManager1" />
+    <orderEntry type="module" module-name="ch21_ex2_ProductManager_sol" />
+    <orderEntry type="module" module-name="ch13_ProductLister" />
+    <orderEntry type="module" module-name="ch21_ProductManager1" />
+    <orderEntry type="module" module-name="ch13_ProductLister1" />
+    <orderEntry type="module" module-name="ch10_ex2_LineItem_sol1" />
+    <orderEntry type="module" module-name="ch19_ex1_FutureValue1" />
+    <orderEntry type="module" module-name="ch18_FutureValueSwing1" />
+    <orderEntry type="module" module-name="ch10_MurachLib" />
+    <orderEntry type="module" module-name="ch10_ex2_LineItem_sol" />
+    <orderEntry type="module" module-name="ch17_FutureValueFX_Validation1" />
+    <orderEntry type="module" module-name="ch01_FutureValueGUI1" />
+    <orderEntry type="module" module-name="ch19_ex1_FutureValue_sol1" />
+    <orderEntry type="module" module-name="ch06_ex4_FutureValue" />
+    <orderEntry type="module" module-name="ch14_Invoice1" />
+    <orderEntry type="module" module-name="ch15_ex2_ProductManager_sol" />
+    <orderEntry type="module" module-name="ch10_ex1_LineItem_sol1" />
+    <orderEntry type="module" module-name="ch18_ex1_FutureValue1" />
+    <orderEntry type="module" module-name="ch17_FutureValueFXML1" />
+    <orderEntry type="module" module-name="ch17_FutureValueFX" />
+    <orderEntry type="module" module-name="ch16_ProductManager" />
+    <orderEntry type="module" module-name="ch14_ex1_Invoice_sol1" />
+    <orderEntry type="module" module-name="ch17_FutureValueFX_Validation" />
+    <orderEntry type="module" module-name="ch10_ex1_Product" />
+    <orderEntry type="module" module-name="ch15_ex2_ProductManager_sol1" />
+    <orderEntry type="module" module-name="ch18_FutureValueSwingValidation1" />
+    <orderEntry type="module" module-name="ch18_FutureValueSwing" />
+    <orderEntry type="module" module-name="ch15_ex2_ProductManager1" />
+    <orderEntry type="module" module-name="ch10_LineItem" />
+    <orderEntry type="module" module-name="ch21_ex2_ProductManager1" />
+    <orderEntry type="module" module-name="ch14_Invoice" />
+    <orderEntry type="module" module-name="ch19_ex1_FutureValue_sol" />
+    <orderEntry type="module" module-name="ch10_ex1_Product1" />
+    <orderEntry type="module" module-name="ch18_ex1_FutureValue_sol1" />
+    <orderEntry type="module" module-name="ch12_Invoice1" />
+    <orderEntry type="module" module-name="ch18_ex2_AreaAndPerimeter1" />
+    <orderEntry type="module" module-name="ch06_ex4_FutureValue_sol1" />
+    <orderEntry type="module" module-name="ch16_ProductManager1" />
+    <orderEntry type="module" module-name="ch18_ex2_AreaAndPerimeter_sol1" />
+    <orderEntry type="module" module-name="ch15_ex3_ProductManager" />
+    <orderEntry type="module" module-name="ch06_ex4_FutureValue1" />
+    <orderEntry type="module" module-name="ch21_ex2_ProductManager" />
+    <orderEntry type="module" module-name="ch01_FutureValueGUI" />
+    <orderEntry type="module" module-name="ch17_FutureValueFXML" />
+    <orderEntry type="module" module-name="ch15_ex2_ProductManager" />
+    <orderEntry type="module" module-name="ch10_LineItem1" />
+    <orderEntry type="module" module-name="ch10_ex1_LineItem_sol" />
+    <orderEntry type="module" module-name="ch14_ex1_Invoice1" />
+    <orderEntry type="module" module-name="ch15_ex3_ProductManager_sol" />
+  </component>
+</module>

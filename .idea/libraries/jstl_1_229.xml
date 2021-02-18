@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jstl-1.229">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaFullStackTraining/CodeExamples/S12L01 - Building custom tag/WebContent/WEB-INF/lib/jstl-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

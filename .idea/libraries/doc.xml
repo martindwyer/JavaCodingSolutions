@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="doc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MurachJavaProgramming/eclipse/book_apps/ch10_MurachLib/doc/type-search-index.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MurachJavaProgramming/eclipse/book_apps/ch10_MurachLib/doc/package-search-index.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MurachJavaProgramming/eclipse/book_apps/ch10_MurachLib/doc/member-search-index.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

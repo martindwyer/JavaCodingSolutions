@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jstl-1.213">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaFullStackTraining/CodeExamples/S05L03 - Reading from Bean using Expression Language/WebContent/WEB-INF/lib/jstl-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

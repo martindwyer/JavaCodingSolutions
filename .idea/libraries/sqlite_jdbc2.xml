@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MurachJavaProgramming/netbeans/book_apps/ch21_ProductManager/sqlite-jdbc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
