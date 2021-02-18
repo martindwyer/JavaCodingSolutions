@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c153dd1e-4f7c-44b9-9d5d-c636d64a07b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ControlsFX/ControlsFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ControlsFX/ControlsFX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorldFX/HelloWorldFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorldFX/HelloWorldFX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DelegationExample/DelegationExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DelegationExample/DelegationExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DependencyInjectionExample/DependencyInjectionExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DependencyInjectionExample/DependencyInjectionExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DependencyInversionExample/DependencyInversionExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/DependencyInversionExample/DependencyInversionExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/InterfaceSegregationExample1/InterfaceSegregationExample1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/InterfaceSegregationExample1/InterfaceSegregationExample1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/InterfaceSegregationExample2/InterfaceSegregationExample2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/InterfaceSegregationExample2/InterfaceSegregationExample2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/LiskovSubstitutionPrincipleExample/LiskovSubstitutionPrincipleExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/LiskovSubstitutionPrincipleExample/LiskovSubstitutionPrincipleExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/ProgrammingToAnInterfaceExample/ProgrammingToAnInterfaceExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/ProgrammingToAnInterfaceExample/ProgrammingToAnInterfaceExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/SingleResponsibilityExample/SingleResponsibilityExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section01DesignPrinciplesStrategies/SingleResponsibilityExample/SingleResponsibilityExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryAbstractCreatorExample/FactoryAbstractCreatorExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryAbstractCreatorExample/FactoryAbstractCreatorExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryConcreteCreatorExample/FactoryConcreteCreatorExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryConcreteCreatorExample/FactoryConcreteCreatorExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryMethodSolution/FactoryMethodSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryMethodSolution/FactoryMethodSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryStaticMethodCreatorExample/FactoryStaticMethodCreatorExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section02FactoryMethod/FactoryStaticMethodCreatorExample/FactoryStaticMethodCreatorExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section03AbstractFactoryMethod/AbstractFactoryMethodExample/AbstractFactoryMethodExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section03AbstractFactoryMethod/AbstractFactoryMethodExample/AbstractFactoryMethodExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section03AbstractFactoryMethod/AbstractFactoryMethodSolution/AbstractFactoryMethodSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section03AbstractFactoryMethod/AbstractFactoryMethodSolution/AbstractFactoryMethodSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_Solution/Singleton_Solution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_Solution/Singleton_Solution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_double_checked_locking_example/Singleton_double_checked_locking_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_double_checked_locking_example/Singleton_double_checked_locking_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_eager_initialization_example/Singleton_eager_initialization_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_eager_initialization_example/Singleton_eager_initialization_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_lazy_initialization_example/Singleton_lazy_initialization_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_lazy_initialization_example/Singleton_lazy_initialization_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_synchronized_approach_example/Singleton_synchronized_approach_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section04Singleton/Singleton_synchronized_approach_example/Singleton_synchronized_approach_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section05Builder/BuilderExample/BuilderExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section05Builder/BuilderExample/BuilderExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section05Builder/BuilderSolution/BuilderSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section05Builder/BuilderSolution/BuilderSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section06Prototype/PrototypeExample/PrototypeExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section06Prototype/PrototypeExample/PrototypeExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section06Prototype/PrototypeSolution/PrototypeSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section06Prototype/PrototypeSolution/PrototypeSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/AdapterSolution/AdapterSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/AdapterSolution/AdapterSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/Adapter_class_inheritance_example/Adapter_class_inheritance_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/Adapter_class_inheritance_example/Adapter_class_inheritance_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/Adapter_object_composition_example1/Adapter_object_composition_example1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section07Adapter/Adapter_object_composition_example1/Adapter_object_composition_example1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section08Bridge/BridgeExample/BridgeExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section08Bridge/BridgeExample/BridgeExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section08Bridge/BridgeSolution/BridgeSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section08Bridge/BridgeSolution/BridgeSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeExample1/CompositeExample1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeExample1/CompositeExample1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeExample2/CompositeExample2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeExample2/CompositeExample2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeSolution/CompositeSolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPatterns/Section09Composite/CompositeSolution/CompositeSolution.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaldenJavaITEC6030/WaldenJavaITEC6030.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WaldenJavaITEC6030/WaldenJavaITEC6030.iml" afterDir="false" />
-    </list>
+    <list default="true" id="c153dd1e-4f7c-44b9-9d5d-c636d64a07b5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shuffle/src/Shuffle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shuffle/src/ShuffleChars.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -71,6 +45,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Shuffle/src/Shuffle.java" />
+        <option value="$PROJECT_DIR$/Shuffle/src/ShuffleChars.java" />
       </list>
     </option>
   </component>
@@ -100,6 +75,12 @@
               <item name="JavaResources" type="462c0819:PsiDirectoryNode" />
               <item name="Shuffle" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaResources" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaResources" type="462c0819:PsiDirectoryNode" />
+              <item name="Shuffle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -111,7 +92,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613654091379" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613658236536" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -127,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ShuffleChars">
     <configuration name="Shuffle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Shuffle" />
       <module name="Shuffle" />
@@ -135,8 +116,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShuffleChars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ShuffleChars" />
+      <module name="Shuffle" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShuffleChars" />
         <item itemvalue="Application.Shuffle" />
       </list>
     </recent_temporary>
@@ -151,12 +140,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613653974930</updated>
-      <workItem from="1613653996968" duration="54000" />
+      <workItem from="1613653996968" duration="1142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54000" />
+    <option name="totallyTimeSpent" value="1142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3568" y="-217" width="1863" height="1120" extended-state="0" />
@@ -169,17 +158,18 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Learn" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299595" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -201,8 +191,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Shuffle/src/Shuffle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shuffle/src/ShuffleChars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
         </state>
       </provider>
     </entry>
